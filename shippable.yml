@@ -12,6 +12,11 @@ env:
   - CI_REPORT=shippable/testresults/junit.xml
 
 build:
+  pre_ci_boot:
+    image_name: shippabledocker/pipelinebbtest
+    image_tag: test25oct
+    pull: true
+    
   ci:
     - go version
     - export GOPATH=$SHIPPABLE_GOPATH
