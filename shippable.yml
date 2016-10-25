@@ -40,5 +40,5 @@ build:
 integrations:
   hub:
     - integrationName: plv2-docker
-      type: docker
+      type: docker 
       
