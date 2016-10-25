@@ -18,7 +18,7 @@ build:
   pre_ci_boot:
     image_name: shippabledocker/pipeline
     image_tag: latest
-    pull: true
+    pull: true 
    
   ci:
     - echo "test"
