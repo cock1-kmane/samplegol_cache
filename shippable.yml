@@ -12,10 +12,10 @@ env:
   - CI_REPORT=shippable/testresults/junit.xml
 
 build:
-  pre_ci_boot:
-    image_name: drydock/u14nod
-    image_tag: prod
-    pull: true
+  #pre_ci_boot:
+  #  image_name: drydock/u14nod
+  #  image_tag: prod
+  #  pull: true
     
   ci:
     - go version
