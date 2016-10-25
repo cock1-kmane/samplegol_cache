@@ -12,8 +12,8 @@ env:
   - CI_REPORT=shippable/testresults/junit.xml
 
 build:
-  pre_ci:
-    - docker build -t=shippabledocker/pipeline:test25oct .
+  #pre_ci:
+   # - docker build -t=shippabledocker/pipeline:test25oct .
     
   pre_ci_boot:
     image_name: shippabledocker/pipeline
@@ -29,7 +29,7 @@ build:
     #- gvm use go$SHIPPABLE_GO_VERSION
     
   post_ci:
-   # - docker build -t=shippabledocker/pipeline:test25oct .
+    - docker build -t=shippabledocker/pipeline:test25oct .
     - docker push shippabledocker/pipelinebbtest:test25oct
     
   cache: true
