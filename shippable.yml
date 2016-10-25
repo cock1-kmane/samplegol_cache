@@ -21,11 +21,12 @@ build:
     pull: false
    
   ci:
+    - echo "test"
     #- go version
-    - export GOPATH=$SHIPPABLE_GOPATH
-    - source $HOME/.gvm/scripts/gvm
-    - gvm install go$SHIPPABLE_GO_VERSION
-    - gvm use go$SHIPPABLE_GO_VERSION
+   # - export GOPATH=$SHIPPABLE_GOPATH
+   # - source $HOME/.gvm/scripts/gvm
+   # - gvm install go$SHIPPABLE_GO_VERSION
+    #- gvm use go$SHIPPABLE_GO_VERSION
     
   post_ci:
     - docker push shippabledocker/pipelinebbtest:test25oct
