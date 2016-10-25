@@ -13,8 +13,8 @@ env:
 
 build:
   pre_ci_boot:
-    image_name: shippabledocker/pipelinebbtest
-    image_tag: test25oct
+    image_name: drydock/u14nod
+    image_tag: prod
     pull: true
     
   ci:
